@@ -46,6 +46,11 @@ public class GameController {
   public String _login(Model model) {
     return "login";
   }
+  @RequestMapping(value="/test", method=RequestMethod.GET)
+  public String test(Model model) {
+	  System.out.println("/test");
+	  return "test";
+  }
 
   @RequestMapping(value="/_register", method=RequestMethod.GET)
   public String _register(Model model) {
